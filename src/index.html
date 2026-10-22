@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <title>AgriTech</title>
+  </head>
+
+  <body>
+
+    <div id="app">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+
+        <div class="brand">
+          <div class="brand-icon">🌱</div>
+
+          <div>
+            <h1>AgriTech</h1>
+            <span>Fertilizer & Seed Shop</span>
+          </div>
+        </div>
+
+
+        <nav class="navigation">
+
+          <button class="nav-item active" data-page="dashboard">
+            <span>⌂</span>
+            Dashboard
+          </button>
+
+          <button class="nav-item" data-page="new-bill">
+            <span>▤</span>
+            New Bill
+          </button>
+
+          <button class="nav-item" data-page="customers">
+            <span>♙</span>
+            Customers
+          </button>
+
+          <button class="nav-item" data-page="bill-history">
+            <span>▤</span>
+            Bill History
+          </button>
+
+          <button class="nav-item" data-page="payments">
+            <span>₹</span>
+            Pending Payments
+          </button>
+
+          <button class="nav-item" data-page="products">
+            <span>▦</span>
+            Products
+          </button>
+
+          <button class="nav-item" data-page="reports">
+            <span>▥</span>
+            Reports
+          </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+          <button class="nav-item" data-page="settings">
+            <span>⚙</span>
+            Settings
+          </button>
+
+          <div class="shop-message">
+            <div class="large-leaf">🌿</div>
+
+            <p>Support Local Farmers</p>
+            <small>Grow Together</small>
+          </div>
+
+        </div>
+
+      </aside>
+
+
+      <!-- Main Content -->
+      <main class="main-content">
+
+        <header class="topbar">
+
+          <div>
+            <h2 id="page-title">Dashboard</h2>
+
+            <p id="page-subtitle">
+              Welcome to AgriTech
+            </p>
+          </div>
+
+
+          <div class="topbar-right">
+
+            <span id="current-date"></span>
+
+            <button class="settings-button">
+              ⚙
+            </button>
+
+          </div>
+
+        </header>
+
+
+        <section id="page-content">
+
+          <div class="dashboard-page">
+
+            <!-- Welcome -->
+            <div class="welcome-card">
+
+              <div>
+                <h2>Good day! 👋</h2>
+
+                <p>
+                  Manage your shop, create bills and track
+                  customer payments.
+                </p>
+              </div>
+
+              <button
+                class="primary-button"
+                id="create-bill-button"
+              >
+                + Create New Bill
+              </button>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="stats-grid">
+
+              <div class="stat-card">
+
+                <div class="stat-icon">₹</div>
+
+                <div>
+                  <span>Today's Sales</span>
+                  <strong>₹0.00</strong>
+                </div>
+
+              </div>
+
+
+              <div class="stat-card">
+
+                <div class="stat-icon">▤</div>
+
+                <div>
+                  <span>Today's Bills</span>
+                  <strong>0</strong>
+                </div>
+
+              </div>
+
+
+              <div class="stat-card warning">
+
+                <div class="stat-icon">₹</div>
+
+                <div>
+                  <span>Pending Payments</span>
+                  <strong>₹0.00</strong>
+                </div>
+
+              </div>
+
+
+              <div class="stat-card">
+
+                <div class="stat-icon">♙</div>
+
+                <div>
+                  <span>Customers With Due</span>
+                  <strong>0</strong>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- Recent Bills -->
+            <div class="content-card">
+
+              <div class="card-header">
+
+                <div>
+                  <h3>Recent Bills</h3>
+
+                  <p>
+                    Your latest transactions
+                  </p>
+                </div>
+
+                <button class="text-button">
+                  View All →
+                </button>
+
+              </div>
+
+
+              <div class="empty-state">
+
+                <div class="empty-icon">
+                  ▤
+                </div>
+
+                <h3>No bills yet</h3>
+
+                <p>
+                  Create your first bill to see it here.
+                </p>
+
+                <button
+                  class="primary-button"
+                  id="empty-create-bill"
+                >
+                  + Create New Bill
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script
+      type="module"
+      src="/main.js"
+    ></script>
+
+  </body>
+</html>
